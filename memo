@@ -1,0 +1,6 @@
+http://qiita.com/shn/items/d2c0d0a8bc3299637073
+http://qiita.com/LAmant/items/7d1ac7efec9041d067a6
+http://qiita.com/sawanoboly/items/218a7b03ddec6be45e34
+
+
+knife zero chef_client 'chef_environment:development' --attribute ipaddress -x vagrant -VV
