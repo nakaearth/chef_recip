@@ -230,7 +230,8 @@
           },
           "state": "up",
           "arp": {
-            "10.0.2.2": "52:54:00:12:35:02"
+            "10.0.2.2": "52:54:00:12:35:02",
+            "10.0.2.3": "52:54:00:12:35:03"
           },
           "routes": [
             {
@@ -265,7 +266,7 @@
           ],
           "encapsulation": "Ethernet",
           "addresses": {
-            "08:00:27:E1:72:40": {
+            "08:00:27:71:04:23": {
               "family": "lladdr"
             },
             "192.168.33.10": {
@@ -275,7 +276,7 @@
               "broadcast": "192.168.33.255",
               "scope": "Global"
             },
-            "fe80::a00:27ff:fee1:7240": {
+            "fe80::a00:27ff:fe71:423": {
               "family": "inet6",
               "prefixlen": "64",
               "scope": "Link"
@@ -313,15 +314,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "434006",
-              "packets": "364",
+              "bytes": "0",
+              "packets": "0",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "434006",
-              "packets": "364",
+              "bytes": "0",
+              "packets": "0",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -331,16 +332,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "2745012",
-              "packets": "46006",
+              "bytes": "685958",
+              "packets": "11618",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "165704067",
-              "packets": "117631",
+              "bytes": "33122713",
+              "packets": "24098",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -349,16 +350,16 @@
           "eth1": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "968",
-              "packets": "14",
+              "bytes": "552",
+              "packets": "8",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "1557034",
-              "packets": "9503",
+              "bytes": "1633478",
+              "packets": "10050",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -369,10 +370,10 @@
     },
     "ipaddress": "10.0.2.15",
     "macaddress": "08:00:27:07:9E:3D",
-    "uptime_seconds": 119014,
-    "uptime": "1 day 09 hours 03 minutes 34 seconds",
-    "idletime_seconds": 118913,
-    "idletime": "1 day 09 hours 01 minutes 53 seconds",
+    "uptime_seconds": 132300,
+    "uptime": "1 day 12 hours 45 minutes 00 seconds",
+    "idletime_seconds": 132201,
+    "idletime": "1 day 12 hours 43 minutes 21 seconds",
     "languages": {
       "lua": {
         "version": "5.1.4"
@@ -420,13 +421,13 @@
     "filesystem": {
       "/dev/sda1": {
         "kb_size": "7635048",
-        "kb_used": "1127412",
-        "kb_available": "6119796",
-        "percent_used": "16%",
+        "kb_used": "1003792",
+        "kb_available": "6243416",
+        "percent_used": "14%",
         "mount": "/",
         "total_inodes": "484800",
-        "inodes_used": "38406",
-        "inodes_available": "446394",
+        "inodes_used": "38380",
+        "inodes_available": "446420",
         "inodes_percent_used": "8%",
         "fs_type": "ext4",
         "mount_options": [
@@ -450,8 +451,8 @@
       },
       "vagrant": {
         "kb_size": "243966468",
-        "kb_used": "40088468",
-        "kb_available": "203878000",
+        "kb_used": "41340436",
+        "kb_available": "202626032",
         "percent_used": "17%",
         "mount": "/vagrant",
         "total_inodes": "1000",
@@ -538,23 +539,23 @@
         "free": "0kB"
       },
       "total": "603580kB",
-      "free": "62036kB",
-      "buffers": "35120kB",
-      "cached": "324224kB",
-      "active": "246000kB",
-      "inactive": "188772kB",
-      "dirty": "80kB",
+      "free": "203632kB",
+      "buffers": "37768kB",
+      "cached": "215328kB",
+      "active": "115964kB",
+      "inactive": "211528kB",
+      "dirty": "1572kB",
       "writeback": "0kB",
-      "anon_pages": "75376kB",
-      "mapped": "9784kB",
-      "slab": "91388kB",
-      "slab_reclaimable": "72208kB",
-      "slab_unreclaim": "19180kB",
-      "page_tables": "2540kB",
+      "anon_pages": "74340kB",
+      "mapped": "9788kB",
+      "slab": "56868kB",
+      "slab_reclaimable": "37352kB",
+      "slab_unreclaim": "19516kB",
+      "page_tables": "2576kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "301788kB",
-      "committed_as": "153636kB",
+      "committed_as": "153320kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "23580kB",
       "vmalloc_chunk": "34359705592kB"
@@ -566,7 +567,7 @@
         "model": "70",
         "model_name": "Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz",
         "stepping": "1",
-        "mhz": "2098.975",
+        "mhz": "2180.733",
         "cache_size": "6144 KB",
         "flags": [
           "fpu",
@@ -609,8 +610,8 @@
     },
     "keys": {
       "ssh": {
-        "host_dsa_public": "AAAAB3NzaC1kc3MAAACBAI3kbtvbl9yXKT6K/nguhcN6cyEqLV8BIHE6Xclui9IWIbieB5jCMl2l0BXY8FLW4R89+8XS/7aQ/1it1+r9oVTFHPplqWQwHWOcu0pNHstmNINNtqR90flmV0P0nKIGcixNLmBiz2ipkcelNqWs5553bTu/vJmPbDImI/CD6RcfAAAAFQDJfxibfoNXeVTnc4dWt2uQ7CUAUwAAAIB2qWYrbxAx5SrWXIatvgUJuIPCMz2Er3t6hwwyqQ3DI2RaW3mWVWAcurGhQHwCJA+EWeXwOWWCHbzIdti7fU/f6qXUDUT0lmija5ROASp6imRzC57UH2xwmhKxOXngZmp6ffGFKnKCnVMaZVdSKFZwNYAcEql3QYNGaZt0Ur8TsQAAAIBdlAfUvSpSYhMPgYsYiEYzpWX1UupkRINyTM8XSAlolhQnlbUZvzzqRI7HvnRYojJ9HaftEqcn8P1I6ThCvLdsoGnY5sp0V7BZlXTa+1YCHivNS30WRxGUDWHmAiP3xsb3DO0ArWXM+o4F0xx7WOE7GdO3bLndmMNkqb0DmQZgXQ==",
-        "host_rsa_public": "AAAAB3NzaC1yc2EAAAABIwAAAQEA03Z3bXATK4jC9733KCZ0AKUlf5j400lFfDiQgco/R6693imlLuKEzEf+75DzHjW70Fw5FSuDNd71MDl4v8ejrnAohvnVh6I1v/rMEl+GKoNRq7n744zA9/0qmUF74Ab1wvQlU5NyFiVCmz52LRzKawiPmj0KQvsWRrHP0VXI1VXBX/3r/ALxeT09uEFyLQJKUYRLUMQNnus4ETLVCgzIumYnB6SLL19YEKmEk2yKZ6yBzAe50WJXA1ICrZBV3QHdPN5p0mV1fPNgalpLcic7HOuG2oFvEEf0/ufFQd9afOW1YKDnyxBPghegsdIZUG2SxVmuyXXUelE5SaOlQ2KWEw=="
+        "host_dsa_public": "AAAAB3NzaC1kc3MAAACBAK2+kRIy3tX1mUhqpMk+bpViDPMR8E68Czaa3XRZi7gKvFwryYP1BRRJ7pD6smvpFA6jGuAl7LuVj85al642c2AwQAT7SSJm1yWqAkabf3eHDZxQzFnQ9xc+CH0nIaHLR3KYEV68SIpYeC6PK38DQ6KajK0DECP/kUCkr29l9ZgTAAAAFQCIdMAwoyDWYR12d2Zfanhh2YSSUwAAAIB7mZIqrNQ7FxgyXrMCFT0LVEr5BRBzDSfsYLKUr8zh9TBlGpA7lqqq/7akuYnafKfUOYGhA4KxDLZ+bvN267KOKiq0EJp3R5ElvMprI90AwaF4a9cufeFncqYKLL5xMnHhi13pyi7pKUaV+ubM9J2Dt1TFd4p+IkZbKHXGfAkbxwAAAIAX+cN3KRff3Gyl0Iks22HcqrmUVl15hX/Oqd+w8v4bc6oLN6jJnLX8Zlov+ft7FL7p0HbTbOG7fyz7bbPFR8mPlGLuzE0gVOeC/k+PDGspnURaFGNx4jLHB74u7nD8vSzdOjMxd7Ddmi9+4z+SZ/JUkKb4a/6Xjser9Jjl6QQUrw==",
+        "host_rsa_public": "AAAAB3NzaC1yc2EAAAABIwAAAQEAwaDQtpMPiAjb2ZJayg7NrkLUXhZQd4g+TEb4FfP0CCAPYe2SJNaUaTDfTOybnmZ6VerQ9lmbLSNRvd3tGfnJDi/nuVgRIduerU6Pb9HTzfEFdj2hODkO+qEXfTDk6grj7H2YtDbxwPH2CcRyZC25u7UdixgUOak4TbiLX1nq7xZ9rhMjrsV/rs94k03KCyfjjtqUVuIUHc+JYRaHSzaux0sDz7MoW4HApTqcU3Q1Qy3PtKxLYwGZPa2nfBwx3n5Ma+aGNI9pVEDvE6G8pnUcdpk6feeQ+qBIHlPXnErS7ic0iwrtr7YLM3t4x9c+ptMPESKG7e8kP38zKm666+XXqQ=="
       }
     },
     "dmi": {
@@ -1157,7 +1158,7 @@
       }
     },
     "root_group": "root",
-    "ohai_time": 1424305310.7268615,
+    "ohai_time": 1424348113.1856909,
     "recipes": [
 
     ],
